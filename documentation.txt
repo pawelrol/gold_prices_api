@@ -1,0 +1,12 @@
+W przygotowanym projekcie u¿yte zosta³y dwa pluginy jQuery UI:
+
+[1] Kalendarz z wyborem dat Datapicker dostêpny na stronie:
+https://jqueryui.com/datepicker/
+
+[2] Suwak zwyborem zakresu:
+https://jqueryui.com/slider/
+
+Obie te funkcje u¿yte w kodzie JS zosta³y opisane w komentarzu.
+
+Dodatkowo do stylizacji elementów wykorzystano bibliotekê bootstrap w wersji 4.0
+

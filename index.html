@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>zadania_Pawel_Rolnik</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+
+
+<div class="container">
+  <div class="row first-row">
+    <div class="col-12">
+      <h1 class="title">A
+      Aby pobrać dane cen złota wybierz zakres dat i kliknij "pobierz"</h1>
+    </div>
+  </div>
+  
+  
+  
+  
+<form>
+  <div class="row second-row">
+    <div class="col-sm-4 col-6 mb-3">
+      <p>Wybierz datę początkową:</p>
+      <input type="text" id="from" class="form-control" placeholder="Kliknij tutaj" readonly>
+    </div>
+    <div class="col-sm-4 col-6 mb-3">
+      <p>Wybierz datę końcową:</p>
+      <input type="text" id="to" class="form-control" placeholder="Kliknij tutaj" readonly>
+    </div>
+    <div class="col-sm-4 col-12 mb-3">
+      <p>Pobierz dane z NBP:</p>
+      <button type="button" id="download" class="btn btn-dark">Pobierz</button>
+    </div>
+  </div>
+</form>
+  
+  
+<div class="row third-row no-display">
+  <div class="col">
+<table id="myTable" class="table"> 
+<thead class="table-head"> 
+<tr> 
+    <th class="table-header-text">
+      <div>
+      Data:
+      </div>
+      <div>
+        <button type="button" id="date-increase" class="btn btn-dark">&#8595;</button>
+      </div>
+      <div>
+        <button type="button" id="date-decrease" class="btn btn-dark">&#8593;</button>
+      </div>
+    </th> 
+    <th class="table-header-text">
+    <div>
+      Cena [zł]:
+    </div>
+    <div>
+      <button type="button" id="price-increase" class="btn btn-dark">&#8595;</button>
+    </div>
+    <div>
+      <button type="button" id="price-decrease" class="btn btn-dark">&#8593;</button>
+    </div>
+    </th> 
+</tr> 
+</thead> 
+<tbody class="table-body"> 
+</tbody> 
+</table>  
+  </div>
+  
+  
+</div>  
+
+  
+<div class="row fourth-row no-display">
+  <div class="col properties">
+  </div>
+</div>
+<div class="row fifth-row no-display">
+  <div class="col-12 price-range">
+    <p>
+    <label for="amount">Filtruj według cen:</label>
+    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    </p>
+    <div id="slider-range"></div>
+  </div>
+  <div class="col-12 left-align">
+    <button type="button" id="filtr" class="btn btn-dark">Filtruj</button>
+  </div>
+</div>   
+</div>  
+    
+    
+<script src="./js/script.js"></script>    
+</body>
+</html>
